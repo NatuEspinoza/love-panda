@@ -1,0 +1,158 @@
+/*
+Resetear el navegador y clases generales
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #ABE188;
+  font-family: 'Hind', sans-serif;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 40px;
+  padding-right: 50px;
+  font-weight: bold;
+  font-size: 3em;
+  line-height: 1;
+}
+
+img {
+  width: 100%;
+  filter: grayscale(80%);
+  margin: 0;
+  padding: 0;
+}
+
+.border {
+  border-top: 30px solid #F78E69;
+}
+
+/*Estilo de Encabezado*/
+
+.header {
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background: #F78E69;
+  text-align: right;
+}
+
+.header p {
+  padding-top: 20px;
+  padding-right: 50px;
+  line-height: 0;
+}
+
+/*Estilo de la sección con contenido de texto*/
+
+.main {
+  text-align: center;
+  padding: 20px;
+  margin: 50px;
+  background: #F78E69;
+}
+
+/*Estilos de sección de imágenes*/
+
+.small-img {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.small-img h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.small-img img {
+  filter: none;
+  width: 200px;
+  height: auto;
+  margin-bottom: 100px;
+  border: 10px solid white;
+  float: left;
+}
+
+.margin-left {
+  margin-left: 30px;
+}
+
+/*Estilos del footer*/
+
+.footer {
+  background: #F78E69;
+  height: 50px;
+  margin: 0;
+}
+
+h6 {
+  font-size: 1em;
+  text-align: right;
+  margin: 0;
+  padding: 20px;
+}
+
+/*Agregando estilo responsive*/
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .header {
+    height: 80px;
+  }
+  h1 {
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-right: 30px;
+  }
+  .header p {
+    padding-top: 10px;
+    padding-right: 30px;
+    font-size: .8em;
+  }
+  .border {
+    border-top: 10px solid #F78E69;
+  }
+  .col-3 {
+    display: none;
+  }
+  .main {
+    width: 300px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .main p {
+    font-size: .8em;
+  }
+  .small-img {
+    margin-top: 10px;
+  }
+  .small-img h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+  .small-img img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+    border: 10px solid white;
+    float: none;
+  }
+  .margin-left {
+    margin-left: 0;
+  }
+  .footer h6 {
+    font-size: .8em;
+    text-align: center;
+    padding: 10px;
+  }
+}
